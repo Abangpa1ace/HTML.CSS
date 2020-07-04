@@ -1,0 +1,33 @@
+[*Javascript]
+- CSS 삭제코드 : document.head.parentNode.removeChild(document.head);
+
+[HTML]
+
+- <fieldset> -> <legend> : 테두리가 있는 Border 형식
+- <input /> : 닫는태그 없음, 검색란 - type="checkbox(네모/중복가능), radio(원형/중복불가)">
+ * <textarea> : 크기가 변하는 검색란
+- <button> : 버튼태그
+- <img src="파일" alt="설명">
+- 시멘틱태그(named <div>) : <header>, <nav>, <article>, <aside - 사이드바>, <footer>, <section - 구역> 
+ * 장점 : 검색엔진 최적화, 웹 접근성, 유지보수
+
+[CSS]
+- <header>
+    <div style="margin: 0 auto; width:1080px"> : 가운데 정렬용 div
+- .class, #id 사용시 앞에 div는 생략, 시멘틱은 지정 필수
+- .class는 여려개 가능, #id는 고유(1개)
+- 부모 > 자식 / 부모 자손
+- display : inline-block; : <div>는 기본적으로 display: block(width 줄여도 margin 전폭먹음) → inline 변경
+ * <span>은 inline(컨텐츠 크기만큼만) / inline-block은 padding, margin
+- background-image: url(Image/main.png); : 이미지 스프라이트 가져오기
+- background-position: ?px ?px; : 이미지 위치조정(좌우, 상하 순)
+- bacnground: url(Image/main.png) -4px -10px no-repeat; : image, position, repeat 한줄
+- text-indent: 100%;
+  overflow: hidden; : 글자 숨기기
+- padding(margin) : 12px 0px 12px 10px; : top - right - bottom - left 순
+
+[기타]
+- div 설계팁 : 가로를 우선 구분, 다음 세로 구분
+- validity : HTML 검사툴
+- 개발자도구(console) > screen.width, height : 화면너비
+- 이미지 스프라이트 : 여러개 이미지 묶어놈(HTTP2) → background image
