@@ -1,0 +1,29 @@
+.container {
+    padding: 100px;
+    background: beige;
+    height: 100vh;
+    display: flex;
+}
+
+.item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.item1 {
+    background: #ef9a9a;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+.item2 {
+    background: #f48fb1;
+    flex-grow: 1;
+}
+.item3 {
+    background: #914f9c;
+    flex-grow: 3;
+}
+.item4 {
+    background: #bac588;
+}

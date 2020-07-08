@@ -1,0 +1,68 @@
+[드림코딩엘리 - CSS]
+
+- display
+  1) block: 행 전체(div)
+  2) inline-block: 해당 사이즈(span)
+  3) inline: 내부요소 크기만큼만
+
+- position
+  1) static: 기본 위치(기본값)
+  2) relative: 기본위치에서 상대값
+  3) absolute: 부모박스에서 상대값
+  4) fixed: 웹 전체에서 상대값
+  5) sticky: 웹 스크롤 내려도 그 위치에 고정됨
+
+  - flexbox : 정렬에 최적화(position, float에 비해)
+  * 중심축(main-axis) / 반대축(cross-axis) : 수직, 수평
+  1) box속성
+    display: flex
+    flex-direction: row, row-reverse, column, column-reverse -> justify/align 방향바꿈!
+    flex-wrap: nowrap(한줄), wrap(여러줄), wrap-reverse
+    flex-flow: row wrap;
+    justify-content<중심축>: flex-start(기본), flex-end, 
+                           space-around(박스외곽), space-evenly(양쪽여백, 균일간격), space-between(여백없음, 균일간격);
+    align-items<반대축>: center, baseline(중심선 정렬)
+    align-content<반대축>: justify-content와 동일
+
+  2) container속성
+    flex-grow: 연장비율(숫자=비율)
+    flex-shrink: 수축비율
+    flex-basis: 연장/수축시 비율(%)
+     * flex: 2 2 auto; /* grow shrink basis */
+    align-self: center; /* 하나만 따로 빼기 */
+    order: item 순서지정(기본값: 0;)
+
+ * HTML, CSS 실습사이트: jsbin.com
+ * 웹사이트 지원여부: CanIUse.com 
+
+
+
+ [드림코딩엘리 - 웹배너 만들기]
+
+- HTML
+  1) CSS link 단축키 : link + tab
+  2) 반복요소 입력방법 : (li>a)*5 + tab
+
+- CSS
+  1) display: flex; 로 행구성
+     -> justify-content로 행배치, align-items는 열 가운데정렬
+  2) a , a:visited {text-decoration: none;} : 링크 보라색 글체삭제
+  3) 반응형 : @media(max-width:800px)
+    . flex-direction: column; - 방향변경
+    . width: 100% - 좌우 흐트러지는 것 바로잡기
+    . 기본값(none) -> 반응형(block) : 화면 줄이면 보임
+    . 기본값(none) -> JS(.active {display:flex;}) : 자바스크립트로 버튼 누르면 보이기 효과 등
+
+- Javascript 맛보기
+  1) link : <script src="main.js" defer></script>
+  2) js code(버튼누르면 display none -> flex) :
+    const togglebtn = document.querySelector('.toolbar');
+    const menu = document.querySelector('.menu');
+    const sns = document.querySelector('.sns');
+
+    togglebtn.addEvenelistener('click', ()=>{
+    menu.classList.toggle('active');
+    sns.classList.toggle('active');});
+      -> 이후, CSS에서 .class.active{display:flex};
+
+* 퍼오기: 아이콘(font awesome), 글씨체(google font)
