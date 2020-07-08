@@ -52,7 +52,9 @@
     . width: 100% - 좌우 흐트러지는 것 바로잡기
     . 기본값(none) -> 반응형(block) : 화면 줄이면 보임
     . 기본값(none) -> JS(.active {display:flex;}) : 자바스크립트로 버튼 누르면 보이기 효과 등
-
+  4) :root(색깔 공통변수)
+    . --text-color, --background-color, --accent-color etc. -> var(--text-color)로 활용
+    
 - Javascript 맛보기
   1) link : <script src="main.js" defer></script>
   2) js code(버튼누르면 display none -> flex) :
