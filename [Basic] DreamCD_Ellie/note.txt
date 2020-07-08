@@ -12,7 +12,7 @@
   4) fixed: 웹 전체에서 상대값
   5) sticky: 웹 스크롤 내려도 그 위치에 고정됨
 
-  - flexbox : 정렬에 최적화(position, float에 비해)
+- flexbox : 정렬에 최적화(position, float에 비해)
   * 중심축(main-axis) / 반대축(cross-axis) : 수직, 수평
   1) box속성
     display: flex
