@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(
+    to right,
+    #042e6f,
+    #042e6f 50%,
+    #f2f2f2 50%,
+    #f2f2f2
+  );
+  padding: 0 30px 30px 30px;
+}
+
+header h1 {
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+
+header #lnb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 232px;
+  box-sizing: border-box;
+}
+
+header #lnb nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header #lnb nav > ul {
+  text-align: center;
+}
+
+header #lnb nav > ul > li {
+  display: inline-block;
+}
+
+header #lnb nav > ul > li > a {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  width: 160px;
+  height: 70px;
+  line-height: 70px;
+}
+
+header #lnb nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: #fff;
+}
+
+header #lnb nav > ul > li > a:hover:after {
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+
+header #lnb nav > ul ul li {
+  display: none;
+}
+
+header .client {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+
+header .client ul {
+  display: flex;
+  width: 170px;
+  background: #f2f2f2;
+}
+
+header .client ul li {
+  flex: 1;
+  line-height: 70px;
+  padding: 0 0 0 18px;
+  font-size: 12px;
+}
+
+header .client ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url(./img/icon.png) no-repeat;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+header .client ul li:last-child a::before {
+  background-position: -23px 0;
+}
+
+header .visual img {
+  width: 100%;
+}
