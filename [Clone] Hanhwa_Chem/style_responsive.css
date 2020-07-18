@@ -1,0 +1,95 @@
+/* 반응형 웹사이트 만들기 */
+
+/* width: 1599px */
+@media screen and (max-width:1599px) {
+    header .innerHeader {width: 95%; min-width: 1024px;}
+    .innerHeader .gnb {margin-left: 50%;}
+    .innerHeader .gnb li a {padding: 0 20px;}
+    .innerHeader .tnb li {margin-right: 10px;}
+    section.about ul, section.innovations .imgbox, section.me ul.list, section.sns ul {
+        width: 95%;
+    }
+    footer .innerFooter {width: 95%; min-width: 90%;}
+    footer .innerFooter .list li {margin-left: 20px;}
+    footer .innerFooter .list li a::after {right:-10px;}
+}
+
+/* width: 1024px */
+@media screen and (max-width:1024px) {
+    header .innerHeader {width: 95%; min-width: 90%;}
+    .innerHeader .gnb, .innerHeader .tnb {display: none;}
+    header .innerHeader .gnbMo {display: block; font-size: 20px;}
+    section.main .main-title{width: 80%;}
+    section.about ul li a p.img {height: 270px;}
+    section.me .list > li > p {margin-bottom: 10px;}
+    section.me .list > li > .in li {margin-bottom: 10px;}
+    section.me .list > li > ul.in li em::after {right: 20px;}
+    section.sns ul li {width: 32%; margin-left: 1.5%;}
+    section.sns ul li a p.img {height: 155px;}
+    footer .innerFooter .list {display: none;}
+}
+
+/* width: 768px */
+@media screen and (max-width: 768px) {
+    section.main .main-title h2 {font-size: 40px;}
+    section.main .main-title p {font-size: 20px;}
+    section.about {padding: 40px 0;}
+    section.about ul li {width:100%}
+    section.about ul li a p.img {height: 577px;}
+    section.innovations .imgbox .inner h3 {padding: 25px 20px;}
+    section.innovations .imgbox .inner .bottom {padding: 30px;}
+    section.innovations .imgbox .inner .bottom .ma {display:none;}
+    section.innovations .imgbox .inner .bottom .btn {display: inline-block; float: none; margin: 20px 0 0 37%;}
+    section.me {padding: 40px 0;}
+    section.me .list {border-bottom: 1px solid #ccc;}
+    section.me .list > li > ul.in li em{width: 100%; margin-bottom: 7px;}
+    section.me .list > li > ul.in li em::after {display: none;}
+    section.sns ul li {width: 100%;}
+    section.sns ul li a p.img {height: 348px;}
+    footer {padding: 25px 0;}
+    footer .innerFooter .logo {float: none;}
+    footer * {text-align: center; margin-left: 0;}
+}
+
+/* width: 414px */
+@media screen and (max-width:414px) {
+    .title h2 {font-size:25px;}
+    .title p {font-size: 14px;}
+    header {height: 60px; line-height: 60px;}
+    header .innerHeader .logo {padding-top: 7px;}
+    section.main .main-title h2 {font-size: 30px;}
+    section.main .main-title p {font-size: 16px;}
+    section.main .main-title .view {width: 120px; padding: 5px; font-size: 12px;}
+    section.about {padding: 20px 0;}
+    section.about ul {margin: 20px auto; border-bottom: none;}
+    section.about ul li a {border: 1px solid #ccc; box-sizing: border-box; margin-bottom: 20px;}
+    section.about ul li a p.img {height: 310px;}
+    section.about ul li a .text {background: #fafafa; padding: 25px;}
+    section.about ul li a .text p.more {display: none;}
+    section.innovations {margin-bottom: 100px;}
+    section.innovations .imgbox .inner .bottom .btn {margin-left: 23%;}
+    section.me ul.list {margin: 30px 0;}
+    section.me ul.list > li {padding: 20px 10px 20px 50px;}
+    section.sns {margin: 30px 0;}
+    section.sns ul li a p.img {height: 158px;}
+    section.sns ul li a .text p.color {margin-bottom: 0;}
+    section.sns ul li a .text p.time {margin-top: 10px;}
+    footer .innerFooter .address {margin-left: 0;}
+}
+
+/* width: 320px(mobile> */
+@media screen and (max-width:320px) {
+    br.mo {display: block;}
+    .wrap {min-width: 320px;}
+    header .innerHeader {min-width: 320px;}
+    header .innerHeader .logo {width: 100px; height: auto;}
+    section.main .main-title h2 {font-size: 30px;}
+    section.main .main-title p {font-size: 12px;}
+    section.about {padding: 10px 0;}
+    section.about ul li a p.img {height: 180px;}
+    section.about ul li a .text {padding: 15px;}
+    section.about ul li a .text h3 {font-size:18px; margin-bottom: 3px;}
+    section.about ul li a .text p {font-size: 14px;}
+    section.innovations .imgbox {height: 350px; margin: 30px 0 0;} 
+    section.innovations .imgbox .inner .bottom .btn {margin-left: 12%;}
+}
